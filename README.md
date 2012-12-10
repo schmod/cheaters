@@ -16,21 +16,27 @@ Cheaters is a collection of HTML-based cheat sheets meant for display in an Auto
 
 ### Using Cheaters
 
-The most useful way to use Cheaters is with an Automator Application.
+Cheaters is now a Chrome Application.  It works, but isn't quite ready for public consumption.  
 
-![Cheaters Automator Application setup](http://brettterpstra.com/wp-content/uploads/2012/03/Cheaters-Automator.jpg)
+For now, the best way to use it is to download or clone this repository, and manually install it into Chrome.  To do this:
 
-1. Download the Zip file above and put it anywhere on your computer (I keep mine in Dropbox so that my cheat sheets are available on other machines). 
-2. Open Automator in your Applications folder. 
-3. Create a new project with the type "Application." You can also use a Workflow, which can be launched easily from the command line, but I'm using an Application for now because it's easiest to launch with a hotkey program.
-4. Drag two actions from the library on the left into the blank area on the right: **Get Specified URLs** and **Website Popup**, in that order. You can find them quickly by selecting "Library" on the left and using the filter to locate them.
-5. Double click the default URL in the **Get Specified URLs** action and set it to the file path to your Cheaters folder. This will be in the format `file:///Users/yourusername/path/to/Cheaters/index.html`.
-6. Set a size in the **Website Popup** action. I'm using a custom size of 700x800, which works well on my setup with two large monitors. The popup is resizable after opening, so it's not critical. Cheaters has a responsive design that will mutate into a single column with a dropdown menu at smaller sizes, so if you have a small screen, use the iPhone preset.
-7. Save the application to your /Applications folder (or ~/Applications).
+1. Open Chrome's extension management page.  This can be found from the Chrome Menu -> Tools -> Extensions.  
+2. If 'Developer Mode' is not checked, check it.
+3. Click 'Load Unpacked Extension,' and navigate to the directory where you just downloaded this repository.  
+4. Panic.  This isn't really ready for production use just yet.
 
-You can add a hotkey or other launch method using Launchbar, Keyboard Maestro, Alfred, Apptivator, etc. Lots of choices. When the application launches, it automatically becomes a floating HUD, and you can dismiss it by focusing it and using Escape or ⌘Q.
+###TODO
 
-You can also use Cheaters in a web browser, just put it on your disk and point your browser to the `file:///...` location.
+* Create a great icon.
+* Better UI controls.
+* Collapsable sections.
+* More fluid layout.  Respond better to wide windows.
+* Settings dialogue for toggling various cheatsheets
+* Support for loading external cheatsheets (There must be a better way to handle this than keeping each sheet in one central repo?)
+* [Dochub](http://dochub.io)-like functionality for opening certain documentation directly in-app.
+* Documentation for 'Always on Top' functionality with various OSes.  Chrome doesn't support this directly.
+
+Pull requests are always welcome.
 
 ### Customizing
 
